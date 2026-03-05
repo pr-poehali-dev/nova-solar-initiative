@@ -3,40 +3,40 @@ import { Badge } from "@/components/ui/badge"
 
 const features = [
   {
-    title: "Адаптивная нейрообработка",
-    description: "Самооптимизирующиеся алгоритмы, которые обучаются на нейронных паттернах и улучшают интерпретацию сигналов.",
-    icon: "brain",
-    badge: "ИИ",
+    title: "Регистрация по номеру",
+    description: "Создай аккаунт за 30 секунд — только номер телефона и код подтверждения. Никаких паролей и email.",
+    icon: "phone",
+    badge: "Быстро",
   },
   {
-    title: "Медицинская защита",
-    description: "Шифрование по стандартам FDA со сквозной защитой конфиденциальных нейронных данных.",
+    title: "Личные сообщения",
+    description: "Мгновенная доставка сообщений, голосовых и видео. Сквозное шифрование защищает каждый диалог.",
     icon: "lock",
-    badge: "Сертификат",
+    badge: "Приватно",
   },
   {
-    title: "Интуитивное управление",
-    description: "Естественная трансляция мыслей в действия с откликом менее миллисекунды и точностью 99,7%.",
+    title: "Групповые чаты",
+    description: "Создавай группы до 10 000 участников, назначай администраторов и делись файлами без ограничений.",
     icon: "globe",
-    badge: "Точность",
+    badge: "Группы",
   },
   {
-    title: "Предиктивная калибровка",
-    description: "ML-модели, которые предугадывают намерения пользователя и оптимизируют нейронные пути.",
+    title: "Мгновенная доставка",
+    description: "Сообщения доходят за миллисекунды в любую точку мира. Онлайн-статус и уведомления в реальном времени.",
     icon: "zap",
-    badge: "Умный",
+    badge: "Скорость",
   },
   {
-    title: "Биометрическая интеграция",
-    description: "Бесшовная синхронизация с мониторингом жизненных показателей для контроля здоровья.",
+    title: "Медиа и файлы",
+    description: "Отправляй фото, видео, документы и голосовые сообщения без потери качества и ограничений по размеру.",
     icon: "link",
-    badge: "Связь",
+    badge: "Медиа",
   },
   {
-    title: "Поддержка XR",
-    description: "Нативная совместимость с AR/VR-средами для терапевтических и рабочих приложений.",
+    title: "Все платформы",
+    description: "iOS, Android, Web и Desktop — твои чаты синхронизируются на всех устройствах в реальном времени.",
     icon: "target",
-    badge: "XR Ready",
+    badge: "Кроссплатформа",
   },
 ]
 
@@ -45,9 +45,9 @@ export function FeaturesSection() {
     <section className="py-24 px-6 bg-background">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-foreground mb-4 font-sans">Возможности нового поколения</h2>
+          <h2 className="text-4xl font-bold text-foreground mb-4 font-sans">Всё для общения с друзьями</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Почувствуйте будущее с технологиями, которые переопределяют возможное
+            LinkUp — мессенджер, который объединяет людей просто и безопасно
           </p>
         </div>
 
@@ -61,12 +61,12 @@ export function FeaturesSection() {
               <CardHeader>
                 <div className="flex items-center justify-between mb-2">
                   <span className="text-3xl">
-                    {feature.icon === "brain" && "&#129504;"}
-                    {feature.icon === "lock" && "&#128274;"}
-                    {feature.icon === "globe" && "&#127760;"}
-                    {feature.icon === "zap" && "&#9889;"}
-                    {feature.icon === "link" && "&#128279;"}
-                    {feature.icon === "target" && "&#127919;"}
+                    {feature.icon === "phone" && "📱"}
+                    {feature.icon === "lock" && "🔒"}
+                    {feature.icon === "globe" && "👥"}
+                    {feature.icon === "zap" && "⚡"}
+                    {feature.icon === "link" && "📎"}
+                    {feature.icon === "target" && "💻"}
                   </span>
                   <Badge variant="secondary" className="bg-accent text-accent-foreground">
                     {feature.badge}
